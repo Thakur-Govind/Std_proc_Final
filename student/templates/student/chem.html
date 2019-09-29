@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+  {% load staticfiles %}
+  <title>subjectwise</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="final.css" rel="stylesheet" type="text/css" >
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+  body{
+  font-family: Tahoma, Geneva, sans-serif;
+  background-attachment:fixed;
+  background-size:1550px 800px;
+  }
+  .jumbo{
+  	background: rgba(30,80,80,0.3);
+  	 border:2px solid rgba(255,255,255,0.6);
+  	 margin-top: 20px;
+  	 height: 250px;
+  	 color: #fff;
+  }
+  .scores{
+     background: rgba(44,62,80,0.5);
+     border:2px solid rgba(255,255,255,0.6);
+     color: #fff;
+     padding-left: 5px;
+     padding-top: 20px;
+
+  }
+  .btn1{
+  	 border:2px solid rgba(255,255,255,0.6);
+   background: rgba(44,62,80,0.5);
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+  }
+
+
+  .info:hover {
+    background: rgba(44,62,80,0.9);
+    color: white;
+  }
+  </style>
+</head>
+<body background=" {% static 'university.png' %}">
+	<div class="container">
+		<div class="row text-center jumbo">
+		   <div class="offset-lg-3 col-lg-6">
+		    <h1>Applied Chemistry</h1><br>
+		    <p>We are here to help you with your performance</p><br>
+		    <h3>LEARN.IMPROVE.GROW.</h3>
+		   </div>
+		</div>
+
+
+		<br><br>
+
+
+  <div class="row">
+    <div class="col-md-6 scores">
+
+        <h5 class="text-center"><u><b>ACADEMIC SCORES</b></u></h5>
+				<br>
+        <p>Term Work: {{ int }}</p><br>
+				<p>Theory:{{ theo }}</p><br>
+				<p>Total:{{ tot }}</p><br>
+				<p>Percentage:{{ per }}</p><br><p>Term Work:</p><br>
+  </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col offset-lg-5 bt1">
+
+          <a href="{% url 'graph' %}"><button class="info btn1">click me</button></a>
+
+        </div>
+      </div>
+      <br><br><br>
+      <div class="row">
+
+            {{ adv }}
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <a href="{% url 'home' %}"><h5>Go Back</h5></a>
+</div>
+
+</body>
+</html>

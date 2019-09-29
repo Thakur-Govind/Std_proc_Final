@@ -1,0 +1,129 @@
+<<<<<<< HEAD
+
+
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>page1</title>
+
+  <link href="{% static 'custom.css' %}" rel="stylesheet" type="text/css" >
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+
+   <div class="signin">
+     {% if error %}
+
+     {{ error }}
+     {% endif %}
+
+
+
+     {% csrf_token %}
+              <form method="POST" action="{% url 'login' %}">
+
+
+                           <h2 style="color:white">Log In</h2><br>
+
+                           <input type="text" name="username" placeholder="Username"><br><br>
+
+                           <input type="password" name="pass" placeholder="Password"><br><br><br>
+
+                           <input type="button" onclick="" value="Log In"><br><br>
+                           <input class="btn btn-primary" type="submit" name="Log In"  />
+                           <div id="container">
+                  </div>
+
+                  <br><br>
+
+                  Dont have account?<a href="{% url 'sigup.html' %}">&nbsp;Sign Up</a>
+
+              </form>
+
+   </div>
+   </body>
+</html>
+=======
+
+
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>page1</title>
+
+  <link href="{% static 'custom.css' %}" rel="stylesheet" type="text/css" >
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+
+   <div class="signin">
+     {% if error %}
+
+     {{ error }}
+     {% endif %}
+
+
+
+     {% csrf_token %}
+              <form method="POST" action="{% url 'login' %}">
+
+
+                           <h2 style="color:white">Log In</h2><br>
+
+                           <input type="text" name="username" placeholder="Username"><br><br>
+
+                           <input type="password" name="pass" placeholder="Password"><br><br><br>
+
+                           <input type="button" onclick="" value="Log In"><br><br>
+                           <input class="btn btn-primary" type="submit" name="Log In"  />
+                           <div id="container">
+                  </div>
+
+                  <br><br>
+
+                  Dont have account?<a href="{% url 'sigup.html' %}">&nbsp;Sign Up</a>
+
+              </form>
+
+   </div>
+   </body>
+</html>
+>>>>>>> 14e2b97fafab7d6a3f4be01912e72f0cc611876d

@@ -1,0 +1,32 @@
+body{
+   font-family: Tahoma, Geneva, sans-serif;
+   color: #fff;
+   background-image: url("static/university.png");
+   background-repeat: no repeat;
+   background-size:1550px 800px;
+   background-attachment: fixed;
+
+   }
+ .gallery-block{padding-bottom:60px; padding-top: 60px;}
+ .gallery-block .heading{margin-bottom: 50px; text-align: center;}
+
+ .gallery-block .heading h2 {font-weight: bold;font-size: 1.4rem;text-transform: uppercase; text-align:center;}
+.gallery-block .cards-gallery .card{transition: 1s easy;}
+.gallery-block .cards-gallery .card{background:transparent;}
+.gallery-block .cards-gallery .card-body p{font-size: 15px;}
+.gallery-block .cards-gallery a{color: #212529;}
+.gallery-block .cards-gallery a:hover{text-decoration: none;}
+.gallery-block .cards-gallery .card{
+	margin-bottom: 30px;
+	box-shadow: 0px 5px 13px rgba(0,0,0,0.9);
+}
+.gallery-block .border-0 {opacity: 0.7;}
+@media(min-width: 576px){
+	.gallery-block .transform-on-hover:hover{
+		transform: translateY(-10) scale(1.02);
+		opacity: 1
+
+		;
+		box-shadow: 0px 12px 12px rgba(0,0,0,0.80) !important;
+	}
+}
